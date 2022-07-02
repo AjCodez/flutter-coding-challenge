@@ -1,3 +1,4 @@
+import 'package:assignment/screens/login.dart';
 import 'package:flutter/material.dart';
 
 class GetStarted extends StatefulWidget {
@@ -34,8 +35,9 @@ class _GetStartedState extends State<GetStarted> {
                 fixedSize: const Size(300, 20),
               ),
               onPressed: () {
-                Navigator.of(context)
-                    .pushNamedAndRemoveUntil('/login/', (route) => false);
+                Navigator.push(context, MaterialPageRoute(builder: (conetext) {
+                  return const LoginView();
+                }));
               },
               child: const Text('Get Started'),
             ),
