@@ -1,3 +1,4 @@
+import 'package:assignment/screens/cert.dart';
 import 'package:flutter/material.dart';
 
 class LoginView extends StatefulWidget {
@@ -110,7 +111,9 @@ class _LoginViewState extends State<LoginView> {
                   } else {
                     Navigator.push(context,
                         MaterialPageRoute(builder: (conetext) {
-                      return const LoginView();
+                      return Certificate(
+                        name: name,
+                      );
                     }));
                   }
                 },
