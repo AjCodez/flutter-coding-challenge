@@ -32,18 +32,28 @@ class Certificate extends StatelessWidget {
                 fontSize: 25,
               ),
             ),
-            const Text(
-              'INSTRUCTOR NAME',
-              style: TextStyle(
-                fontWeight: FontWeight.bold,
-                fontSize: 20,
-              ),
-            ),
-            const Text(
-              'Pankaj Kapoor',
-              style: TextStyle(
-                fontSize: 20,
-              ),
+            Column(
+              children: const [
+                Align(
+                  alignment: Alignment.centerLeft,
+                  child: Text(
+                    'INSTRUCTOR NAME',
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 20,
+                    ),
+                  ),
+                ),
+                Align(
+                  alignment: Alignment.centerLeft,
+                  child: Text(
+                    'Pankaj Kapoor',
+                    style: TextStyle(
+                      fontSize: 20,
+                    ),
+                  ),
+                ),
+              ],
             ),
             Align(
               alignment: Alignment.bottomRight,
