@@ -1,3 +1,4 @@
+import 'package:assignment/screens/cert.dart';
 import 'package:assignment/screens/get_started.dart';
 import 'package:assignment/screens/login.dart';
 import 'package:flutter/material.dart';
@@ -9,6 +10,7 @@ void main() {
       home: const GetStarted(),
       routes: {
         '/login/': (context) => const LoginView(),
+        '/cert/': (context) => Certificate(),
       },
     ),
   );
